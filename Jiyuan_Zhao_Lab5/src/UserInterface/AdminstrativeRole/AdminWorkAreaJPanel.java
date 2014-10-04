@@ -38,7 +38,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        managesuppliersButton1.setFont(new java.awt.Font("Tahoma", 0, 18));
+        managesuppliersButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         managesuppliersButton1.setText("Manage Suppliers >>");
         managesuppliersButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,8 +47,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(managesuppliersButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 260, -1));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24));
-        jLabel1.setText("My Work Area -Aminstrative Role");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setText("My Work Area -Adminstrative Role");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

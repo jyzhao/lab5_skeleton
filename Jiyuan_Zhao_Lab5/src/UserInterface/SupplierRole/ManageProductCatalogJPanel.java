@@ -37,10 +37,11 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
         }
         
         for(Product p : supplier.getProductCatalog().getProductCatalog()) {
-            Object row[] = new Object[3];
+            Object row[] = new Object[4];
             row[0] = p;
             row[1] = p.getModelNumber();
             row[2] = p.getPrice();
+            row[3] = p.getAvailability();
             model.addRow(row);
             }
         }
@@ -77,13 +78,13 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
         productCatalog.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         productCatalog.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Product Name", "Product ID", "Price"
+                "Product Name", "Product ID", "Price", "Availability"
             }
         ));
         jScrollPane1.setViewportView(productCatalog);

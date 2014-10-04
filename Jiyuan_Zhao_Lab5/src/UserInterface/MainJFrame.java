@@ -11,8 +11,11 @@
 
 package UserInterface;
 
+import Business.Business;
+import Business.MasterOrderCatalog;
 import Business.SupplierDirectory;
 import UserInterface.AdminstrativeRole.AdminWorkAreaJPanel;
+import UserInterface.CustomerRole.CustomerWorkAreaJPanel;
 import UserInterface.SupplierRole.LoginSupplier;
 import java.awt.CardLayout;
 
@@ -23,13 +26,18 @@ import java.awt.CardLayout;
 public class MainJFrame extends javax.swing.JFrame {
 
     private SupplierDirectory supplierDirectory;
+    private Business business;
+    private MasterOrderCatalog masterOrderCatalog;
+    
 //    private MasterOrderCatalog moc;
     
     /** Creates new form MainJFrame */
     public MainJFrame() {
         initComponents();
         //this.setExtendedState(MAXIMIZED_BOTH);
-        supplierDirectory = new SupplierDirectory();
+        business = new Business();
+        supplierDirectory = business.getSupplierDirectory();
+        masterOrderCatalog = business.getMasterOrderCatalog();
 //        moc = new MasterOrderCatalog();
     }
 
@@ -68,7 +76,6 @@ public class MainJFrame extends javax.swing.JFrame {
         });
 
         customerButton3.setText("Customer Role");
-        customerButton3.setEnabled(false);
         customerButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerButton3ActionPerformed(evt);
@@ -85,7 +92,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(supplierManagerButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(adminButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(customerButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,10 +134,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void customerButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButton3ActionPerformed
         // TODO add your handling code here:
-//       CustomerWorkAreaJPanel cwajp = new CustomerWorkAreaJPanel(userProcessContainer, supplierDirectory, moc);
-//       userProcessContainer.add("CustomerWorkAreaJPanel",cwajp);
-//       CardLayout layout = (CardLayout)userProcessContainer.getLayout();
-//       layout.next(userProcessContainer);
+       CustomerWorkAreaJPanel cwajp = new CustomerWorkAreaJPanel(userProcessContainer,supplierDirectory,masterOrderCatalog);
+       userProcessContainer.add("CustomerWorkAreaJPanel",cwajp);
+       CardLayout layout = (CardLayout)userProcessContainer.getLayout();
+       layout.next(userProcessContainer);
+      
     }//GEN-LAST:event_customerButton3ActionPerformed
 
     /**
