@@ -3,10 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/Supplier.java</file>
             <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/AdminstrativeRole/AdminWorkAreaJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/CustomerRole/ViewProductDetailJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/MasterOrderCatalog.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/Order.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/CustomerRole/ViewOrderItemDetailJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/ProductCatalog.java</file>
             <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/MainJFrame.java</file>
             <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/SupplierDirectory.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/Product.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/Supplier.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/SupplierRole/ManageProductCatalogJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/Business.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/SupplierRole/CreateNewProductJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/SupplierRole/ViewProductDetailJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/Business/OrderItem.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/CustomerRole/CustomerWorkAreaJPanel.java</file>
+            <file>file:/Users/zhaojiyuan/GitHub/lab5_skeleton/Jiyuan_Zhao_Lab5/src/UserInterface/CustomerRole/BrowseProductJPanel.java</file>
         </group>
     </open-files>
 </project-private>
